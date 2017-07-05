@@ -1,0 +1,15 @@
+/**
+ * David Samuelson 208788851 89-281-02
+ * Eden Shuker 208991406 89-281-02
+ * Tamir Moshiashvili 316131259 89-281-02
+ * Haim Rubinshtein 203405286 89-281-02
+ */
+
+.button {
+    -fx-background-color: darkgrey;
+    -fx-pref-width: 120px;
+}
+
+.combo-box{
+    -fx-background-color: deepskyblue;
+}

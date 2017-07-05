@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="280.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Information about us" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Lets talk about us ..." />
+      <Label text="It is a story about 4 students" />
+      <Label text="and 1 DB project" />
+      <Label text="Will it be a success?" />
+      <Label text="Well it is up to you" />
+   </children>
+</VBox>

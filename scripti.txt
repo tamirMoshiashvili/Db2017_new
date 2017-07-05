@@ -1,0 +1,3 @@
+INSERT INTO shukers VALUES ('166', 'foo', 'sun', 'many@gmail');
+INSERT INTO shukers VALUES ('117', 'bar', 'my', 'miry@gmail');
+INSERT INTO shukers VALUES ('4477', 'pi', 'ruri', 'haim6678@gmail.com');
