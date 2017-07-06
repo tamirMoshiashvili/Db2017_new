@@ -69,7 +69,12 @@ public class QueryController {
         notesText.setText("");
         try {
             // execute query
-            TableView<List<String>> tableView = this.dbManager.executeQuery(queryText.getText());
+            String queryStr = queryText.getText();
+            if (queryStr.isEmpty()){
+                showNotes("Please enter a string in the needed text-area");
+                return;
+            }
+            TableView<List<String>> tableView = this.dbManager.executeQuery(queryStr);
             if (tableView == null) {
                 // query has no table-result to show for the user
                 showNotes("Success!");

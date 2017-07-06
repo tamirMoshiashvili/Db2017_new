@@ -166,14 +166,26 @@ public class SimpleQueryController {
      */
     public void submitClick(MouseEvent mouseEvent) {
         notesField.setText("");
+
+        if (tablesNames.getSelectionModel().isEmpty()) {
+            notesField.setText("Please choose a table-name from the combo-box");
+            return;
+        }
+
         StringBuilder query = new StringBuilder();
 
         // insert columns
         query.append("SELECT ");
+        boolean hasSelectedColumns = false;
         for (CheckBox checkbox : checkBoxes) {
             if (checkbox.isSelected()) {
                 query.append(checkbox.getText()).append(", ");
+                hasSelectedColumns = true;
             }
+        }
+        if (!hasSelectedColumns) {
+            notesField.setText("Please select at least one column from the check-box list");
+            return;
         }
         query.deleteCharAt(query.lastIndexOf(","));
 
