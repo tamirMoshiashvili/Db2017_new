@@ -112,7 +112,7 @@ public class SimpleQueryController {
     /**
      * user clicked the combo box dropdown.
      *
-     * @param mouseEvent
+     * @param mouseEvent event.
      */
     public void dropdownClick(MouseEvent mouseEvent) {
         if (!this.isComboBoxClicked) {

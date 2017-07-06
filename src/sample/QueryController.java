@@ -101,7 +101,7 @@ public class QueryController {
      * show notes in the scene.
      * let the user see the 'notes' section after that.
      *
-     * @param msg
+     * @param msg message for the user.
      */
     private void showNotes(String msg) {
         notesText.setText(msg);
