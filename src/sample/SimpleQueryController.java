@@ -165,6 +165,7 @@ public class SimpleQueryController {
      * @param mouseEvent event.
      */
     public void submitClick(MouseEvent mouseEvent) {
+        notesField.setText("");
         StringBuilder query = new StringBuilder();
 
         // insert columns

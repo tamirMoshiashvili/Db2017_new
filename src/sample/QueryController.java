@@ -66,6 +66,7 @@ public class QueryController {
      * @param mouseEvent event.
      */
     public void submitClick(MouseEvent mouseEvent) {
+        notesText.setText("");
         try {
             // execute query
             TableView<List<String>> tableView = this.dbManager.executeQuery(queryText.getText());
